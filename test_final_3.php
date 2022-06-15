@@ -7,10 +7,10 @@ $file = fopen('crypto.csv', 'w+');
 
 
 $haut = max(array_column($content, 4));
-print_r($haut);
 
 foreach ($content as $key => $value) {
     for ($i=0; $i<10; $i++) {
-        // fputcsv($file, $haut);
+        print_r($haut);
+        fputcsv($file, $content);
     }
 }
